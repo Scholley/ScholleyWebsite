@@ -1,30 +1,33 @@
 site:
   name: Scholley Games
-  site: 'https://astrowind.vercel.app'
+  site: 'https://scholley.com'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: null
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Scholley
+    template: '%s — Scholley'
+  description: "Scholley is an indie game developer creating unique games and sharing the journey behind their development."
+
   robots:
     index: true
     follow: true
+
   openGraph:
-    site_name: AstroWind
+    site_name: Scholley
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
+
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: null
+    site: null
     cardType: summary_large_image
 
 i18n:
