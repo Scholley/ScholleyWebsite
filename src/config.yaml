@@ -9,8 +9,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Scholley
-    template: '%s'
+    default: Home
+    template: '%s - Scholley'
   description: "Scholley is an indie game developer creating unique games and sharing the journey behind their development."
 
   robots:
