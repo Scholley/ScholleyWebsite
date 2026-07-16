@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon/components';
+import { twMerge } from 'tailwind-merge';
+import type { CallToAction as Props } from '~/types';
+
+const {
+  variant = 'secondary',
+  target,
+  text = Astro.slots.render('default'),
+  icon = '',
+  class: className = '',
+  type,
+  ...rest
+} = Astro.props;
+
+const variants = {
+  primary: 'btn-primary',
+  secondary: 'btn-secondary',
+  tertiary: 'btn btn-tertiary',
+  link: 'cursor-pointer hover:text-primary',
+};
+---
+
+{
+  type === 'button' || type === 'submit' || type === 'reset' ? (
+    <button
+      type={type}
+      class={twMerge(variants[variant] || '', className)}
+      {...rest}
+    >
+      <span class="inline-flex items-center gap-2">
+        {icon && <Icon name={icon} class="w-5 h-5" />}
+        <Fragment set:html={text} />
+      </span>
+    </button>
+  ) : (
+    <a
+      class={twMerge(variants[variant] || '', className)}
+      {...(target ? { target: target, rel: 'noopener noreferrer' } : {})}
+      {...rest}
+    >
+      <span class="inline-flex items-center gap-2">
+        {icon && <Icon name={icon} class="w-5 h-5" />}
+        <Fragment set:html={text} />
+      </span>
+    </a>
+  )
+}

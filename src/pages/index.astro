@@ -1,0 +1,177 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import AboutImage from '~/assets/images/about.png';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { Icon } from "astro-icon/components";
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'Scholley',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: "Rent's Due", href: '#rentsdue' },
+        { text: 'About', href: '#about' },
+        { text: 'Contact', href: '#contact' },
+        { text: 'Blog', href: 'blog' },
+      ]}
+      position="right"
+      isSticky
+      
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    id="rentsdue"
+    title="Coming to Steam Soon!"
+    tagline="Now in development"
+    actions={[
+  {
+    variant: 'primary',
+    text: 'Play Demo',
+    icon: 'simple-icons:itchdotio',
+    href: 'https://scholley.itch.io/',
+  },
+  {
+    variant: 'secondary',
+    text: 'Become a Playtester',
+    href: '#contact',
+  },
+]}
+  >
+    <Fragment slot="subtitle">
+      <img
+       src="/images/WebsiteArt.png"
+       alt="CoverArt"
+       class="mx-auto mt-8 rounded-lg shadow-lg"
+       />
+      <br />
+      <strong>Finally!</strong> A game where you can fantasize about owning a house while struggling to pay rent. 
+      <br />Manage your money printing business in an effort to keep up with rising rent costs in this incremental economy management roguelite.
+      
+      
+      <!-- <br /> With 5 years of experience and a degree from
+      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
+      realities. -->
+    </Fragment>
+  </Hero>
+
+  <section id="about" class="max-w-7xl mx-auto px-4 py-4">
+    <div class="md:flex items-center gap-12">
+
+      <div class="md:w-1/2">
+        <img
+          src="/images/about.png"
+          alt="About Image"
+          class="w-full rounded-lg shadow-lg"
+        />
+      </div>
+
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold mb-6">About Me</h2>
+
+        <p class="text-lg">
+          Hi! I'm Kevin Schollenberger aka Scholley. I am a solo dev making roguelite and incremental games. I have been playing video games my whole life and have started to make my own over the past several years.
+        </p>
+
+        <p class="mt-4 text-lg">
+          Check out my steam page or itch.io to play my latest games, join my mailing list if you want to be a playtester, and join my discord if you want to chat. Oh yea, and check out my blog if you like bad writing with a lot of spunk.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-7xl mx-auto px-4 py-20">
+
+    <div class="max-w-xl mx-auto text-center">
+
+      <p class="text-sm uppercase tracking-[0.25em] text-amber-500 font-semibold">
+        Be the First to Play
+      </p>
+
+      <h2 class="text-5xl font-bold mt-2 mb-6">
+        Become a Playtester
+      </h2>
+
+      <p class="text-lg text-gray-400 mb-10">
+        Want to play the most up to date version of Rent's Due? Join the mailing list and get early access as well as monthly updates of the games progress.
+      </p>
+
+      <!-- Newsletter -->
+
+      <form class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="flex-1 rounded-lg border border-stone-600 bg-stone-900 px-5 py-3 text-white placeholder:text-stone-500"
+        />
+
+        <button
+          class="rounded-lg bg-amber-500 hover:bg-amber-400 px-8 py-3 font-semibold text-black transition"
+        >
+          Sign Up
+        </button>
+      </form>
+
+      <!-- Socials -->
+
+      <div class="flex justify-center gap-6 text-stone-300 mb-8">
+
+        <a href="https://store.steampowered.com/" target="_blank">
+          <Icon name="simple-icons:steam" class="w-8 h-8 hover:text-white transition" />
+        </a>
+
+        <a href="https://scholley.itch.io/" target="_blank">
+          <Icon name="simple-icons:itchdotio" class="w-8 h-8 hover:text-white transition" />
+        </a>
+
+        <a href="https://discord.gg/yourinvite" target="_blank">
+          <Icon name="simple-icons:discord" class="w-8 h-8 hover:text-white transition" />
+        </a>
+
+        <a href="https://youtube.com/" target="_blank">
+          <Icon name="simple-icons:youtube" class="w-8 h-8 hover:text-white transition" />
+        </a>
+
+        <a href="https://bsky.app/profile/yourusername.bsky.social" target="_blank">
+          <Icon name="simple-icons:bluesky" class="w-8 h-8 hover:text-white transition" />
+        </a>
+
+      </div>
+
+      <p class="text-stone-400">
+        kevin@scholley.com
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="The Blog"
+    information={`Things I like to talk about and you like to read, hopefully.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>
