@@ -12,7 +12,7 @@ metadata:
   canonical: https://astrowind.vercel.app/landing
 ---
 
-Rent's Due is my first game and the demo is out now on my [itch.io page](https://scholley.itch.io/). Though the path getting here was not as smooth as I would have liked. I'm assuming that if you are reading this, it is many years down the road and I have somehow actually made some successful games. And you are someone looking back through my old logs to see how someone went about doing it (that's what I have been doing with other blogs at least). Or none of that happens and no one is reading this and this was a great excercise in journaling. Either way, whether for you or for me, this is the mistake ridden path I took to get here.
+Rent's Due is my first game and the demo is out now on my [itch.io page](https://scholley.itch.io/rents-due). Though the path getting here was not as smooth as I would have liked. I'm assuming that if you are reading this, it is many years down the road and I have somehow actually made some successful games. And you are someone looking back through my old logs to see how someone went about doing it (that's what I have been doing with other blogs at least). Or none of that happens and no one is reading this and this was a great excercise in journaling. Either way, whether for you or for me, this is the mistake ridden path I took to get here.
 
 ## Straight to the wrong point
 
@@ -37,7 +37,7 @@ So instead of moving on to my next game, I kept developing this one and decided 
 
 Now, I would't take advice from me if I were you, but you're not me, you're you, so maybe I can trick you into it anyway. My path in game dev has been riddled with mistakes and hindsight forehead smacks. But I could have only learned those mistakes truely for myself by jumping in and doing it. So don't worry about messing up and just jump in and get your hands dirty. Oh and make small games is actually really great advice.
 
-If you are so compelled, please check out Rent's Due and play its [demo](https://scholley.itch.io/). If you are as I have predicted reading this post ten years after its conception, wave at the flying cars going by your window and subserviently say thank you to the A.I. overlords that have ineveitabley seized control of our every waking lives :>. Thanks for reading and safe internet travels.
+If you are so compelled, please check out Rent's Due and play its [demo](https://scholley.itch.io/rents-due). If you are as I have predicted reading this post ten years after its conception, wave at the flying cars going by your window and subserviently say thank you to the A.I. overlords that have ineveitabley seized control of our every waking lives :>. Thanks for reading and safe internet travels.
 
 - Kevin
 
